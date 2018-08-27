@@ -1,0 +1,265 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/* HEADER */
+.Header {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid green;
+  justify-content: space-between;
+}
+.Header-Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.Header-Btn-Div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header-Btn1 {
+  font-size: 1.5rem;
+  width: 150px;
+}
+.Header-Btn-Div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header-Btn2 {
+  font-size: 1.5rem;
+  width: 150px;
+}
+.Header-Number-Div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.Header-Number {
+  font-size: 2.2rem;
+}
+/* NAVIGATION */
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid green;
+  background: #1d723f;
+}
+.NavItem,
+.UncontrolledDropdown {
+  margin: 0 20px;
+}
+.NavLink,
+.DropdownToggle {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255) !important;
+}
+.DropdownItem {
+  font-size: 1.5rem;
+}
+.navbar-toggler-icon {
+  font-size: 2.5rem;
+  color: white !important;
+}
+.NavLink:hover {
+  color: lightgray;
+}
+/* JUMBO */
+.JumboTron {
+  background-image: url('./img/trees1000.jpg');
+  background-size: cover;
+}
+.JumboText {
+  color: white;
+}
+/* CARDS */
+.Cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Card {
+  width: 250px;
+  margin: 20px;
+  box-shadow: 5px 10px 8px #888888;
+}
+.Card:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.CardTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.CardText {
+  font-size: 2.5rem;
+}
+/* FOOTER */
+.FooterP {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .Header {
+    flex-direction: column;
+  }
+
+  .Header-Btn-Div1 {
+    margin: 10px;
+  }
+
+  .Header-Btn-Div2 {
+    margin: 10px;
+  }
+
+  .Header-Number-Div {
+    margin: 10px;
+  }
+
+  .Header-Number {
+    font-size: 2.2rem;
+  }
+}
+
+.Landing,
+.About,
+.LocationHours,
+.Services {
+  margin: 10px auto;
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+  border: 1px solid green;
+}
+
+/* ********** ABOUT PAGE **********  */
+
+.AboutSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.AboutPic {
+  margin: 20px;
+  padding: 20px;
+}
+.AboutParagraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  width: 60%;
+}
+
+.AboutParagraph {
+  font-size: 1.8rem;
+}
+
+/* ********** LOCATIONHOURS PAGE **********  */
+
+.LocationHoursSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+.LocationHoursPic {
+  margin: 20px;
+  padding: 20px;
+}
+.LocationHoursParagraphs {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; */
+  margin: 20px;
+  padding: 20px;
+}
+
+.LocationHoursParagraph {
+  font-size: 1.8rem;
+
+  width: 375px;
+}
+
+/* SERVICES PAGE */
+
+.ServicesSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.ServicesPic {
+  margin: 20px;
+  padding: 20px;
+}
+
+ul li {
+  font-size: 1.8rem;
+  list-style: none;
+  text-align: left;
+  margin: 5px;
+}
+
+.DemolitionPara,
+.HaulingPara {
+  font-size: 1.8rem;
+  width: 48%;
+  margin: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 632px) {
+  
+  .ServicesSection {
+    margin: 0px;
+    padding: 0px;
+  }
+
+ 
+  .DemolitionPara {
+    text-align: center;
+    width: 525px;
+    order: 2
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .AboutParagraphs,
+ {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .AboutParagraph,
+   {
+    text-align: center;
+    width: 325px;
+  }
+}
