@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
-import {
-  Card,
-  CardTitle,
-  CardText,
-  CardImg,
-  CardImgOverlay,
-  NavLink
-} from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+
 import Header from './Header';
 import Navigation from './Navigation';
 import Jumbo from './Jumbo';
-import Cards from './Cards';
+
 import Footer from './Footer';
 import servicesLandscaping from '../img/services-landscaping.jpg';
 import servicesDemolition from '../img/services-demolition.jpg';
