@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <div className="Footer">
         <footer>
-          <p className="FooterP">© 2018 Will Glaner Landscaping | All rights reserved.</p>
+          <p className="FooterP">© 2019 Will Glaner Landscaping | All Rights Reserved.</p>
          
         </footer>
       </div>
